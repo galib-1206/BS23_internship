@@ -1,3 +1,10 @@
+// Applying the following changes to a starting up project ->
+
+// 1.Output the "Key Concepts" data
+
+// 2.Identify possible Components
+
+// 3.Create and Use(Re-usable) Custom Components
 
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
@@ -29,13 +36,8 @@ const concepts = [
 function App() {
   return (
     <div>
-      <Header/>
-      {
-      /* <header>
-        <img src={keyConceptsImage} alt="Medal badge with a star" />
-        <h1>Key React Concepts</h1>
-        <p>Selected key React concepts you should know about</p>
-      </header> */}
+      <Header />
+
       <ul id="concepts">
         {/* <Concept/> is used as wrapper component */}
 
@@ -43,22 +45,8 @@ function App() {
         <Concept image={concepts[1].image} alt={concepts[1].title} description={concepts[1].description} />
         <Concept image={concepts[2].image} alt={concepts[2].title} description={concepts[2].description} />
 
-        {/* <li className="concept">
-          <img src={concepts[0].image} alt={concepts[0].title} />
-          <h2>{concepts[0].title}</h2>
-          <p>{concepts[0].description}</p>
-        </li> */}
-      {/* <li className="concept">
-        <img src={concepts[1].image} alt={concepts[1].title} />
-        <h2>{concepts[1].title}</h2>
-        <p>{concepts[1].description}</p>
-      </li>
-      <li className="concept">
-        <img src={concepts[2].image} alt={concepts[2].title} />
-        <h2>{concepts[2].title}</h2>
-        <p>{concepts[2].description}</p>
-      </li> */}
-      
+
+
       </ul>
     </div>
   );
